@@ -5,6 +5,7 @@ pipeline {
         COST_THRESHOLD = "200"
         AWS_ACCESS_KEY_ID     = credentials('aws-access-key')
         AWS_SECRET_ACCESS_KEY = credentials('aws-secret-key')
+        INFRACOST_API_KEY = credentials('infracost-api-key')
     }
 
     stages {
