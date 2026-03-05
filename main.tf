@@ -7,7 +7,10 @@ resource "aws_instance" "web" {
   instance_type = "t2.medium"
 
   tags = {
-    Name = "WebServer"
+    Environment = "dev"
+    Team        = "platform"
+    Owner       = "devops"
+    CostCenter  = "engineering"
   }
 }
 
